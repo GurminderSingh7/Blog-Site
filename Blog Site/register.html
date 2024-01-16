@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta tags for character set and viewport configuration -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Custom Styling -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Page title -->
+  <title>Blog</title>
+</head>
+
+<body>
+  <!-- Header section -->
+  <header>
+    <!-- Logo section -->
+    <div class="logo">
+      <h1 class="name">BlogSite</h1>
+    </div>
+
+    <!-- Navigation menu -->
+    <ul class="nav">
+      <li><a href="index.html">Home</a></li>
+      <li>
+        <a>
+          Sign in
+        </a>
+        <!-- Submenu for user options -->
+        <ul>
+          <li><a href="register.html" class="register">Register</a></li>
+          <li><a href="login.html" class="logout">Logout</a></li>
+        </ul>
+      </li>
+    </ul>
+  </header>
+
+  <!-- Main content section for authentication -->
+  <div class="auth-content">
+
+    <!-- Registration form -->
+    <form action="register.html" method="post" onsubmit="return validateForm()">
+      <h2 class="form-title">Register</h2>
+
+      <!-- Display error messages -->
+      <div id="error-message" class="msg error"></div>
+
+      <!-- Input fields for username, email, password, and password confirmation -->
+      <div>
+        <label>Username</label>
+        <input type="text" name="username" id="username" class="text-input">
+      </div>
+      <div>
+        <label>Email</label>
+        <input type="email" name="email" id="email" class="text-input">
+      </div>
+      <div>
+        <label>Password</label>
+        <input type="password" name="password" id="password" class="text-input">
+      </div>
+      <div>
+        <label>Password Confirmation</label>
+        <input type="password" name="passwordConf" id="passwordConf" class="text-input">
+      </div>
+
+      <!-- Submit button -->
+      <div>
+        <button type="submit" name="register-btn" class="btn btn-big">Register</button>
+      </div>
+
+      <!-- Sign-in link -->
+      <p>Or <a href="login.html">Sign In</a></p>
+    </form>
+
+  </div>
+
+  <!-- Footer section -->
+  <footer>
+    <!-- Copyright information -->
+    <p>&copy; 2023 BlogSite. All rights reserved.</p>
+  </footer>
+
+  <!-- Custom Script -->
+  <script src="/js/scripts.js"></script>
+</body>
+
+</html>

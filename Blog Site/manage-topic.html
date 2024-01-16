@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta tags for character set and viewport configuration -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Custom Styling -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!-- Page title -->
+  <title>Manage Topic</title>
+</head>
+
+<body>
+  <!-- Header section -->
+  <header>
+    <!-- Logo section -->
+    <div class="logo">
+      <h1 class="name">BlogSite</h1>
+    </div>
+
+    <!-- Navigation menu -->
+    <ul class="nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="manage-post.html">Blog</a></li>
+      <li>
+        <a href="#">
+          SIGNED IN!
+        </a>
+        <!-- Submenu for user options -->
+        <ul>
+          <li><a href="register.html" class="register">Register</a></li>
+          <li><a href="login.html" class="logout">Logout</a></li>
+        </ul>
+      </li>
+    </ul>
+  </header>
+
+  <section>
+      <!-- Page title for managing topics -->
+    <h2 class="page-title">Manage Your Topics!</h2>
+    <div class="box">
+
+      <!-- Button group for managing and creating blog topics -->
+      <div class="button-group">
+        <a href="manage-post.html" class="btn btn-big">Manage Blog</a>
+        <a href="add-post.html" class="btn btn-big">Create Blog</a>
+        <a href="manage-topic.html" class="btn btn-big">Manage Topic</a>
+        <a href="add-topic.html" class="btn btn-big">Add Topic</a>
+      </div>
+
+      <!-- Content for managing topics -->
+      <div class="content">
+
+        <!-- Table for displaying topics -->
+        <table>
+          <thead>
+            <tr>
+              <th>Blog Name</th>
+              <th>Name</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Example rows, replace with actual data from the server -->
+            <tr>
+              <td>Title 1</td>
+              <td>Poetry</td>
+              <td><a href="#" class="delete">delete</a></td>
+            </tr>
+            <tr>
+              <td>Title 2</td>
+              <td>Life Lessons</td>
+              <td><a class="delete">delete</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <!-- Copyright information -->
+    <p>&copy; 2023 BlogSite. All rights reserved.</p>
+  </footer>
+
+  <!-- Custom Script -->
+  <script src="/js/scripts.js"></script>
+</body>
+
+</html>

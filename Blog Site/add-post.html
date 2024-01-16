@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags for character set and viewport configuration -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Custom Styling -->
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Add Post</title>
+</head>
+
+<body>
+    <!-- Header section -->
+    <header>
+        <!-- Logo section -->
+        <div class="logo">
+            <h1 class="name">BlogSite</h1>
+        </div>
+
+        <!-- Navigation menu -->
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="manage-post.html">Blog</a></li>
+            <li>
+                <a>
+                    SIGNED IN!
+                </a>
+                <!-- Submenu for user options -->
+                <ul>
+                    <li><a href="register.html" class="register">Register</a></li>
+                    <li><a href="login.html" class="logout">Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+
+    <!-- Page title for managing posts -->
+
+
+    <div class="circles">
+        <section>
+            <h2 class="page-title">Add a Post!</h2>
+            <div class="taller-box">
+                <div class="box">
+
+                    <!-- Button group for managing and creating blog posts -->
+                    <div class="button-group">
+                        <a href="manage-post.html" class="btn btn-big">Manage Blog</a>
+                        <a href="add-post.html" class="btn btn-big">Create Blog</a>
+                        <a href="manage-topic.html" class="btn btn-big">Manage Topic</a>
+                        <a href="add-topic.html" class="btn btn-big">Add Topic</a>
+                    </div>
+
+                    <!-- Content for managing posts -->
+                    <div class="content">
+
+                        <!-- Form for creating a new blog post -->
+                        <form action="create.html" method="post">
+                            <!-- Input fields for title, body, image, and topic -->
+                            <div>
+                                <label>Title</label>
+                                <input type="text" name="title" class="text-input">
+                            </div>
+                            <div>
+                                <label>Body</label>
+                                <textarea name="body" id="body"></textarea>
+                            </div>
+                            <div>
+                                <label>Image</label>
+                                <input type="file" name="image" class="text-input">
+                            </div>
+                            <div>
+                                <label>Topic</label>
+                                <select name="topic" class="text-input">
+                                    <option value="Technology">Technology</option>
+                                    <option value="Food">Food</option>
+                                    <!-- Add more topics as needed -->
+                                </select>
+                            </div>
+                            <!-- Submit button for adding a new post -->
+                            <div>
+                                <button type="submit" class="btn btn-big">Add Post</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer section -->
+    <footer>
+        <!-- Copyright information -->
+        <p>&copy; 2023 BlogSite. All rights reserved.</p>
+    </footer>
+
+    <!-- Custom Script -->
+    <script src="/js/scripts.js"></script>
+
+</body>
+
+</html>

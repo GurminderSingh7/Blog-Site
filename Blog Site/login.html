@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta tags for character set and viewport configuration -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Styling -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Page title -->
+  <title>Login</title>
+
+</head>
+
+<body>
+  <!-- Header section -->
+  <header>
+    <!-- Logo section -->
+    <div class="logo">
+      <h1 class="name">BlogSite</h1>
+    </div>
+
+    <!-- Navigation menu -->
+    <ul class="nav">
+      <li><a href="index.html">Home</a></li>
+      <li>
+        <a href="#">
+          Sign in
+        </a>
+        <ul>
+          <li><a href="register.html" class="register">Register</a></li>
+          <li><a href="login.html" class="logout">Logout</a></li>
+        </ul>
+      </li>
+    </ul>
+  </header>
+
+  <!-- Authentication Content -->
+  <div class="auth-content">
+
+    <!-- Login Form -->
+    <form action="login.html" method="post" onsubmit="return validateLogin();">
+      <!-- Form title -->
+      <h2 class="form-title">Login</h2>
+
+      <!-- Display error messages -->
+      <div id="error-message1" class="msg error"></div>
+
+      <!-- Input fields for username and password -->
+      <div>
+        <label>Username</label>
+        <input type="text" name="username" class="text-input" id="usernamelogin">
+      </div>
+      <div>
+        <label>Password</label>
+        <input type="password" name="password" class="text-input" id="passwordlogin">
+      </div>
+
+      <!-- Submit button for login -->
+      <div>
+        <button type="submit" name="login-btn" class="btn btn-big">Login</button>
+      </div>
+
+      <!-- Sign-up link -->
+      <p>Or <a href="register.html">Sign Up</a></p>
+    </form>
+
+  </div>
+
+  <!-- Footer section -->
+  <footer>
+    <!-- Copyright information -->
+    <p>&copy; 2023 BlogSite. All rights reserved.</p>
+  </footer>
+
+  <!-- Custom Script -->
+  <script src="/js/scripts.js"></script>
+
+</body>
+
+</html>

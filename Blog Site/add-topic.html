@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta tags for character set and viewport configuration -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Custom Styling -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!-- Page title -->
+  <title>Manage Posts</title>
+</head>
+
+<body>
+  <!-- Header section -->
+  <header>
+    <!-- Logo section -->
+    <div class="logo">
+      <h1 class="name">BlogSite</h1>
+    </div>
+
+    <!-- Navigation menu -->
+    <ul class="nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="manage-post.html">Blog</a></li>
+      <li>
+        <a href="#">
+          SIGNED IN!
+        </a>
+        <!-- Submenu for user options -->
+        <ul>
+          <li><a href="register.html" class="register">Register</a></li>
+          <li><a href="login.html" class="logout">Logout</a></li>
+        </ul>
+      </li>
+    </ul>
+  </header>
+
+  <!-- Main content section -->
+  <div class="circles">
+    <section>
+      <!-- Page title for managing posts -->
+      <h2 class="page-title">Add a Topic!</h2>
+      <div class="box">
+
+        <!-- Button group for managing and creating blog topics -->
+        <div class="button-group">
+          <a href="manage-post.html" class="btn btn-big">Manage Blog</a>
+          <a href="add-post.html" class="btn btn-big">Create Blog</a>
+          <a href="manage-topic.html" class="btn btn-big">Manage Topic</a>
+          <a href="add-topic.html" class="btn btn-big">Add Topic</a>
+        </div>
+
+        <!-- Content for adding a new topic -->
+        <div class="content">
+
+          <!-- Form for creating a new topic -->
+          <form action="create.html" method="post">
+            <!-- Input fields for name and description -->
+            <div>
+              <label>Name</label>
+              <input type="text" name="name" class="text-input">
+            </div>
+            <div>
+              <label>Description</label>
+              <textarea name="description" id="body"></textarea>
+            </div>
+
+            <!-- Submit button for adding a new topic -->
+            <div>
+              <button type="submit" class="btn btn-big">Add Topic</button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer section -->
+  <footer>
+    <!-- Copyright information -->
+    <p>&copy; 2023 BlogSite. All rights reserved.</p>
+  </footer>
+
+  <!-- Custom Script -->
+  <script src="/js/scripts.js"></script>
+
+</body>
+
+</html>
